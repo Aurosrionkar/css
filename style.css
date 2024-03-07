@@ -1,0 +1,130 @@
+/* #boxm{
+    height: 100px;
+    width:  100px;
+    background-color: pink;
+    font-size: 10px;
+}
+
+#boxn{
+    height: 50px;
+    width:  40%;
+    background-color: yellow;
+    margin-left: 20%;
+    font-size: 2em;
+    width: 5rem ;
+}
+
+div{
+    height: 100px;
+    width:  100px;
+    background-color: aqua;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+#box1 {
+    position: static;
+    background-image: url("plant.jpg");
+    background-size: cover;
+}
+
+#box2 {
+    position: relative;
+    top : 10px;
+    left: 10px;
+}
+
+#box3 {
+    position: absolute;
+    top: 10px;
+}
+
+#box4{
+    position: fixed;
+    right: 10px;
+}
+
+#imp {
+    height: 80px;
+    width: 80px;
+    background-image: url("earth.jpg");
+    background-size: cover;
+    position: fixed;
+    color: azure;
+} */
+/* 
+body{
+    text-align: center;
+}
+
+div{
+    height: 100px;
+    width: 150px;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+#container {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* align-items: center ;
+} */
+
+/* #box1 {
+    background-color: aqua;
+}
+
+#box2 {
+    background-color: blue;
+    height: 150px;
+    flex-shrink: 4;
+}
+
+#box3 {
+    background-color: pink;
+    height: 80px;
+}
+
+#box4 {
+    background-color: green;
+}
+
+#box5 {
+    background-color: purple;
+} */ 
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    /* transition-property: all;
+    transition-duration: 2s; */
+    transition: all 2s ease-in 1s;
+    transform: scale(0.5);
+    animation-name: colorAnimate  ;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorAnimate {
+    from{ background-color: aqua;}
+    to {background-color: black;}
+    
+}
+
+div:hover {
+    background-color: red;
+    color: white;transform: translate(200px);
+
+}
+
+div:active {
+    background-color: pink;
+}
